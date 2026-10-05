@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SkillSwap — Peer-to-Peer Skill Learning</title>
+  <meta name="description" content="SkillSwap: Peer-to-Peer Skill Learning and Attendance Management System">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <div class="scan"></div>
+  <!-- shared gradient for progress rings -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="gr" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#00e5ff"/><stop offset="1" stop-color="#ff2bd6"/>
+      </linearGradient>
+    </defs>
+  </svg>
+  <div id="root"></div>
+  <div id="toasts"></div>
+  <script src="js/bg.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
